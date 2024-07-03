@@ -6,11 +6,12 @@ Don't print any of the words entered by the user. Use the concept of conditional
 
 secret_word = "chupacabra"
 
+word = input("Enter a word: ")
 
 while word == secret_word:
 
     word = input("Enter a word: ")
-    
+
     print("You've successfully left the loop.")
     break
 
