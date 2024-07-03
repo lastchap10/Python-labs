@@ -10,12 +10,12 @@ word = input("Enter a word: ")
 
 while word == secret_word:
 
-    word = input("Enter a word: ")
-
     print("You've successfully left the loop.")
     break
 
-else:
-     print(f"{word}")
+""" else:
+     print(word = input("Enter a word: "))
    
     
+
+"""
