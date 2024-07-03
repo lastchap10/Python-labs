@@ -11,11 +11,8 @@ word = input("Enter a word: ")
 while word == secret_word:
 
     print("You've successfully left the loop.")
-    break
+    break 
 
-""" else:
+else:
      print(word = input("Enter a word: "))
    
-    
-
-"""
