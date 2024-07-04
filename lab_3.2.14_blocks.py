@@ -22,7 +22,5 @@ height = ""
 
 while True:
     if blocks == 1:
-        height = blocks
-        
-
-print("The height of the pyramid:", height)
+        height = blocks    
+    print("The height of the pyramid:", height)
