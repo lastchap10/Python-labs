@@ -1,14 +1,18 @@
-secret_word = int(22)
+# Read the number of blocks from the user
+blocks = int(input("Enter the number of blocks: "))
 
-while True: # using while true function to create a loop and create a condition. 
+# Initialize variables to keep track of the current height and the number of blocks needed for the next layer
+height = 0
+blocks_needed = 1
 
-    word = input("Input the word: ") # user required to input a number
+# Loop to build the pyramid
+while blocks >= blocks_needed:
+    # Build the current layer
+    blocks -= blocks_needed
+    # Move to the next layer
+    height += 1
+    # The next layer will require one more block than the current one
+    blocks_needed += 1
 
-    if word != secret_word: # finding if the number matches the secret number
-        print("Haha! You're stuck in the loop") # Printing the message 
-
-    else:
-        print(f"{word}") # if condition not true, it repeats the function number again 
-        print("Well done, muggle! You are free now.")
-
-        #break # breaking the loop 
+# Output the height of the pyramid
+print("The height of the pyramid:", height)

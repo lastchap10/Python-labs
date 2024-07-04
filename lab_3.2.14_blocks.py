@@ -1,26 +1,15 @@
-""" Listen to this story: a boy and his father, a computer programmer, are playing with wooden blocks. They are building a pyramid.
-
-Their pyramid is a bit weird, as it is actually a pyramid-shaped wall – it's flat. The pyramid is stacked according to one simple principle: each lower layer contains one block more than the layer above.
-
-The figure illustrates the rule used by the builders:
-
-
-
-Your task is to write a program which reads the number of blocks the builders have, and outputs the height of the pyramid that can be built using these blocks.
-
-Note: the height is measured by the number of fully completed layers – if the builders don't have a sufficient number of blocks and cannot complete the next layer, they finish their work immediately.
-
-Test your code using the data we've provided. """
-
-#Code starts here 
-
+# Read the number of blocks from the user
 blocks = int(input("Enter the number of blocks: "))
 
-# Write your code here.
+# Initialize variables for the height and the current layer
+height = 0
+current_layer = 1
 
-height = ""
+# Build the pyramid layer by layer
+while blocks >= current_layer:
+    blocks -= current_layer
+    height += 1
+    current_layer += 1
 
-while True:
-    if blocks == 1:
-        height = blocks    
-    print("The height of the pyramid:", height)
+# Output the height of the pyramid
+print("The height of the pyramid:", height)
