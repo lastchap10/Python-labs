@@ -14,11 +14,10 @@ beatles_list.append(a)
 print( beatles_list, "beatles")
 
 #step 3 
-i = ["Stu Sutcliffe", "Pete Best"]
-for i in beatles_list: 
+input_members = ["Stu Sutcliffe", "Pete Best"]
+for i in input_members: 
     beatles_list.append(i)
-    i == "Stu Sutcliffe"
-
+    
 print( beatles_list, "beatles")
 print( beatles_list, "beatles")
 print( beatles_list, "beatles")
